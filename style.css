@@ -1,0 +1,100 @@
+/* 清楚元素默认的内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 清楚列表样式 */
+li {
+    list-style: none;
+}
+/* 整体背景颜色 */
+body {
+    background-color: #f3f5f7;
+}
+/* 按钮样式 */
+button {
+    /* 按钮去掉默认边框*/
+    border:none;
+}
+/* 版心1200  水平居中 */
+.w {
+    width: 1200px;
+    margin: auto;
+}
+/* 头部样式 */
+.header {
+    height: 42px;
+    /* background-color: pink; */
+    margin: 30px auto;
+}
+/* logo浮动 */
+.logo {
+    float: left;
+    margin-right: 60px;
+}
+/* 头部导航浮动 */
+.nav {
+    float: left;
+}
+.nav ul li {
+    float: left;
+}
+/* 文字布局 */
+.nav ul li a {
+    /* 转换块级元素 */
+    display: block;
+    height: 40px;
+    /* 左右间距 */
+    padding: 0 20px;
+    /* 字间距 */
+    margin-right: 20px;
+    line-height: 40px;
+    /* 文字大小 */
+    font-size: 18px;
+    /* 文字颜色 */
+    color: #050505;
+    /* 文字没有样式 */
+    text-decoration: none;
+}
+/* 鼠标经过出现下边框 */
+.nav ul li a:hover {
+    /* 蓝色实线下划线，2像素 */
+    border-bottom: 2px solid #00a4ff;
+}
+.search {
+    float: left;
+    margin-left: 70px;
+}
+/* 搜索框样式 */
+.search input {
+    float: left;
+    width: 340px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    /* 不要有边框 */
+    border-right: 0;
+    /* 搜索框文字距离左边距20px */
+    padding-left: 20px;
+    /* 文字颜色：灰色 */
+    color: #ccc;
+}
+/* 按钮样式 */
+.search button {
+    float: left;
+    width: 42px;
+    height: 42px;
+    background: url(img/btn.png);
+}
+.user {
+    float: left;
+    /* 文字垂直居中 */
+    height: 42px;
+    line-height: 42px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #666;
+}
+.user img {
+    width: 30px;
+    height: 30px;
+}
