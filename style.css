@@ -39,6 +39,18 @@ a {
     width: 1200px;
     margin: auto;
 }
+/* 固定定位导航栏 */
+.gddh {
+    position: fixed;
+    top: 50%;
+    left: 50% ;
+    z-index: 999;
+    /* -600是版心大小的一半 + 自己的宽度 然后就是靠近边线的距离 为了美观 再加10px*/
+    margin-left: -790px;
+    width: 180px;
+    height: 420px;
+    background-color: pink;
+}
 /* 头部样式 */
 .header {
     height: 42px;
@@ -291,6 +303,8 @@ a {
 }
 /* 下盒子里面的小模块 */
 .box-bd li {
+    /* 定位布局  子绝父相 父级相对定位 */
+    position: relative;
     /* 浮动 小模块大小 背景颜色 盒子之间距离左边15像素 距离下部分15像素*/
     float: left;
     width: 228px;
@@ -306,6 +320,22 @@ a {
     /* 父亲的宽度就是小模块图片的宽度 */
     width: 100%;
 }
+/* 增加角标 */
+.box-bd .hot {
+    /* 使用绝对定位 */
+    position: absolute;
+    top: 0;
+    right: -25px;
+    width: 75px;
+}
+.box-bd .new {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 45px;
+}
+
+
 /* 小模块文字距离左右两边距离 大小 颜色 不要变粗*/
 .box-bd li h4 {
     margin: 20px;
